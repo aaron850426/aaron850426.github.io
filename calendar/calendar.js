@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $("#calendar_div1").show();
+  $("#calendar_p1").click(function(){
+      $("#calendar_div1").show();
+      $("#calendar_div2").hide();
+  });
+  $("#calendar_p2").click(function(){
+      $("#calendar_div1").hide();
+      $("#calendar_div2").show();
+  });
+});

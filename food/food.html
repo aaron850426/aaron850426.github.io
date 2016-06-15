@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8" />
+    <title>food</title>
+    <link rel = "stylesheet" type = "text/css" href = "../home/home_style.css">
+    <link rel = "stylesheet" type = "text/css" href = "food_style.css">
+    <link rel = "stylesheet" type = "text/css" href = "../font-awesome-4.6.3/css/font-awesome.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../jQuery/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src = "food.js"></script>
+
+</head>
+<body>
+
+  <ul  class="catalog">
+    <li><a href = "../home/home.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i> 首頁</a></li>
+    <li><a class = "catalog_home" href = "food.html"><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i> 食</a></li>
+    <li><a href = "../house/house.html"><i class="fa fa-street-view fa-fw" aria-hidden="true"></i> 住</a></li>
+    <li><a href = "../traffic/traffic.html"><i class="fa fa-bus fa-fw" aria-hidden="true"></i> 行</a></li>
+    <li><a href = "../travel/travel.html"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> 旅遊</a></li>
+    <li><a href = "../calendar/calendar.html"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 海大行事曆</a></li>
+  </ul>
+
+  <div class="pics">
+      <img src="food_img/八方雲集3.jpg" width="200" height="200" alt="picture 1" />
+      <img src="food_img/三媽臭臭鍋.jpg" width="200" height="200" alt="picture 2" />
+      <img src="food_img/寶妹雲泰料理.jpg" width="200" height="200" alt="picture 3" />
+      <img src="food_img/竹間.jpg" width="200" height="200" alt="picture 4" />
+      <img src="food_img/義家之煮.jpg" width="200" height="200" alt="picture 5" />
+      <img src="food_img/早餐.jpg" width="200" height="200" alt="picture 8" />
+      <img src="food_img/早餐2.jpg" width="200" height="200" alt="picture 9" />
+      <img src="food_img/一粒咖啡.jpg" width="200" height="200" alt="picture 10" />
+      <img src="food_img/雅盧.jpg" width="200" height="200" alt="picture 11" />
+      <img src="food_img/河豚很多.jpg" width="200" height="200" alt="picture 12" />
+  </div>
+
+  <div id="menu_pics" class="menu_pics"></div>
+  <div class = "random_choose">
+    <input id = "choose_button" class = "choose_button" type = "button" value = "選擇">
+    <p class = "choose_msg">你還在猶豫要吃什麼嗎?</p>
+    <div class = "choose_check">
+      <ul>
+        <form name="form1" id="form1" />
+        <li>
+      		<input type="radio" name="foodItem" id="one" checked />
+      		<label for="one">平價正餐</label>
+      	</li>
+      	<li>
+      		<input type="radio" name="foodItem" id="two" />
+      		<label for="two">火鍋/義大利麵</label>
+      	</li>
+      	<li>
+      		<input type="radio" name="foodItem" id="three" />
+      		<label for="three">早餐</label>
+      	</li>
+      	<li>
+      		<input type="radio" name="foodItem" id="four" />
+      		<label for="four">甜點/下午茶</label>
+      	</li>
+      </ul>
+      <input id="menu_button" class = "menu_button" type = "button" value = "點這裡看菜單"/>
+    </div>
+    <div id="choose_pics" class="choose_pics"></div>
+  </div>
+
+</body>
+</html>

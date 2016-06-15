@@ -1,0 +1,40 @@
+body {background-image: url("../background_Img/b001.gif"); font-family:微軟正黑體;}
+.pics {
+    height:  50%;
+    width:   50%;
+}
+
+.pics img {
+    padding: 5px;
+    border:  1px solid #ccc;
+    background-color: #eee;
+    width:  100%;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+.view_div {
+  margin-top: 30px;
+  margin-left: 300px;
+}
+.view_div table{
+  border-collapse: collapse;
+  width: 25%;
+  float: left;
+}
+.view_div tr:hover {background-color: #D6E8FF}
+.view_div tr {padding: 15px;}
+.view_div td {border-bottom: 1px solid #ddd; text-align: left;}
+
+.view_info div {background-color: #D6E8FF; }
+.view_info a:link {text-decoration: none;}
+.view_info a:hover {text-decoration: underline;}
+
+#Peace_Island_text, #nightmarket_text, #museum_text, #Jiu_Fen_text, #Lotus_Valley_text, #Keelung_port_text {
+  width: 45%;
+  padding-bottom: 20px;
+  border-radius: 25px;
+  display: none;
+  float: left;
+}

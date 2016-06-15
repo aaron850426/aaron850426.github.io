@@ -1,0 +1,60 @@
+body {
+  background-image: url(backgroundImg.png);
+}
+
+.floatMenu {
+  display: table;
+  list-style-type: none;
+  margin: 15px auto;
+  padding: 0;
+  overflow: hidden;
+  font-family: 微軟正黑體;
+}
+
+.floatMenu li {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 0.4rem 2.0rem;
+  display: block;
+  background-color: #2eaa3a;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  margin: 0px 1px;
+}
+
+.floatMenu li:hover,
+.floatMenu li.selected {
+  background-color: #ffffff;
+  color: #1a811b;
+  border-color: #00c951;
+}
+
+.busImg {
+  display: table;
+  list-style-type: none;
+  width: 1080px;
+  height: 735px;
+  margin: 15px auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.busImg img{
+  display: none;
+  vertical-align: middle;
+  width: 1080px;
+  height: 735px;
+}
+
+
+
+
+
+
+
+
+/**/
