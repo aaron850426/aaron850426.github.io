@@ -5,6 +5,9 @@
 })(jQuery);
 
 $(document).ready(function(){
+    $("#bus_101").attr("class", "selected");
+    $("#Img_bus_101").show();
+
     $("#bus_101").click(function(){
         $("#bus_101").attr("class", "selected");
         $("#bus_103").attr("class", "");
@@ -12,7 +15,7 @@ $(document).ready(function(){
         $("#bus_1051").attr("class", "");
         $("#bus_R66").attr("class", "");
 
-        $("#Img_bus_101").slideToggle("slow");
+        $("#Img_bus_101").slideDown("slow");
         $("#Img_bus_103").slideUp("slow");
         $("#Img_bus_104").slideUp("slow");
         $("#Img_bus_1051").slideUp("slow");
@@ -27,7 +30,7 @@ $(document).ready(function(){
       $("#bus_R66").attr("class", "");
 
       $("#Img_bus_101").slideUp("slow");
-      $("#Img_bus_103").slideToggle("slow");
+      $("#Img_bus_103").slideDown("slow");
       $("#Img_bus_104").slideUp("slow");
       $("#Img_bus_1051").slideUp("slow");
       $("#Img_bus_R66").slideUp("slow");
@@ -42,7 +45,7 @@ $(document).ready(function(){
 
       $("#Img_bus_101").slideUp("slow");
       $("#Img_bus_103").slideUp("slow");
-      $("#Img_bus_104").slideToggle("slow");
+      $("#Img_bus_104").slideDown("slow");
       $("#Img_bus_1051").slideUp("slow");
       $("#Img_bus_R66").slideUp("slow");
     });
@@ -57,7 +60,7 @@ $(document).ready(function(){
       $("#Img_bus_101").slideUp("slow");
       $("#Img_bus_103").slideUp("slow");
       $("#Img_bus_104").slideUp("slow");
-      $("#Img_bus_1051").slideToggle("slow");
+      $("#Img_bus_1051").slideDown("slow");
       $("#Img_bus_R66").slideUp("slow");
     });
 
@@ -72,6 +75,6 @@ $(document).ready(function(){
       $("#Img_bus_103").slideUp("slow");
       $("#Img_bus_104").slideUp("slow");
       $("#Img_bus_1051").slideUp("slow");
-      $("#Img_bus_R66").slideToggle("slow");
+      $("#Img_bus_R66").slideDown("slow");
     });
 });
