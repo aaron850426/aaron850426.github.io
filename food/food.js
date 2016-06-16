@@ -21,6 +21,7 @@ var arrayIndex;
 
 function start(){
   rand_pic();
+  initMap();
   var form3 = document.getElementById("three").checked;
   document.getElementById( "choose_button" ).addEventListener( "click", rand_pic, false );
   document.getElementById( "menu_button" ).addEventListener( "click", rand_pic_menu, false );
@@ -44,4 +45,31 @@ function rand_pic(){
 
 function rand_pic_menu(){
   document.getElementById( "menu_pics" ).innerHTML = "<img src = 'food_img/" + food[arrayIndex][random_value] + "_菜單.jpg'/>";
+}
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: {lat: -34.397, lng: 150.644}
+  });
+  var geocoder = new google.maps.Geocoder();
+  geocodeAddress(geocoder, map);
+  document.getElementById('submit').addEventListener('click', function() {
+    geocodeAddress(geocoder, map);
+  });
+}
+
+function geocodeAddress(geocoder, resultsMap) {
+  var address = document.getElementById('address').value;
+  geocoder.geocode({'address': address}, function(results, status) {
+    if (status === google.maps.GeocoderStatus.OK) {
+      resultsMap.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+        map: resultsMap,
+        position: results[0].geometry.location
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
 }

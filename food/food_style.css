@@ -1,22 +1,23 @@
 body {
-	font-family: montserrat;
 	background: url('http://thecodeplayer.com/uploads/media/gpp.png');
-	color: #333;
+	font-family: 微軟正黑體;
+	color: rgb(0, 0, 0);
 }
 
+.w3-top {background-color: white;}
 .pics {
-    height:  50%;
-    width:   50%;
+	width:  80%;
+  margin: 50px auto;
+  z-index: 0;
 }
 
 .pics img {
     padding: 5px;
     border:  1px solid #ccc;
     background-color: #eee;
-    width:  100%;
-    height: 400px;
-    margin-top: 10px;
-    margin-left: 300px;
+		margin-left: 70px;
+		width: 80%;
+		height: 400px;
 }
 
 .random_choose{
@@ -49,27 +50,24 @@ body {
   margin-top: 10px;
   height: 200px;
   width: 300px;
-	float: left;
 }
 
+.menu_pics {margin: 20px auto; width: 80%;}
 .menu_pics img {
-	margin-top: 50px;
-	margin-left: 150px;
-	width:  80%;
-	height: 600px;
-	float: center;
+	margin-left: 100px;
+	width: 80%;
+	height: 500px;
 }
 
 .choose_msg{
-  font-family: 微軟正黑體;
+
   font-size: 20px;
   padding: 10px 20px;
 }
 
 .choose_button{
-	margin-top: 5px;
+	margin: 5px auto;
 	float: left;
-  font-family: 微軟正黑體;
 	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
 	box-shadow:inset 0px 1px 0px 0px #fce2c1;
@@ -110,8 +108,7 @@ body {
 }
 
 .menu_button {
-	margin-left: 30px;
-	margin-top: 10px;
+	margin: 10px auto;
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -150,4 +147,20 @@ body {
 .menu_button:active {
 	position:relative;
 	top:1px;
+}
+
+#map {
+	margin: 0 auto;
+	height: 300px;
+	width: 50%;
+}
+#floating-panel {
+	margin: 10px auto;
+	width: 250px;
+	height: 25px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  padding-left: 10px;
 }

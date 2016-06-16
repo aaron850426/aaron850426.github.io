@@ -2,10 +2,11 @@ body {
 	background: url('../background_Img/geometry.png');
 	color: #333;
 }
-
+.w3-top {
+	background-color: white;
+}
 .calendar_div1, .calendar_div2 {
-  margin-top: 10px;
-  margin-left: 175px;
+  margin: 0 auto;
   width: 70%;
   font-family: 微軟正黑體;
   display: none;
@@ -30,7 +31,12 @@ body {
   text-align: left;
 }
 
-.calendar_table th, td {
+.calendar_table th {
+  padding-left: 5px;
+  border: 1px #0075A0 solid;
+}
+
+.calendar_table td {
   padding-left: 5px;
   border: 1px #0075A0 solid;
 }

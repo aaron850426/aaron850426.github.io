@@ -2,7 +2,7 @@ body {
   background-image: url(backgroundImage.jpg);
 
 }
-
+.w3-top {background-color: white;}
 .component {
 	line-height: 1.5em;
 	margin: 0 auto;

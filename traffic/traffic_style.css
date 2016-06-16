@@ -1,7 +1,7 @@
 body {
   background-image: url(backgroundImg.png);
 }
-
+.w3-top {background-color: white;}
 .floatMenu {
   display: table;
   list-style-type: none;

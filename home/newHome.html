@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8" />
+    <title>NTOU HIGH LIFE</title>
+    <link rel = "stylesheet" type = "text/css" href = "../font-awesome-4.6.3/css/font-awesome.css">
+    <link rel = "stylesheet" type = "text/css" href = "../w3.css">
+    <link rel = "stylesheet" type = "text/css" href = "newHome_style.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCVCBwGDSWY0JhxL9_cnlDc6hfFtDoS0xU"></script>
+    <script>
+      var myCenter = new google.maps.LatLng(25.150170, 121.776687);
+
+      function initialize() {
+      var mapProp = {
+        center:myCenter,
+        zoom:14,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+      var marker = new google.maps.Marker({
+        position:myCenter,
+        });
+
+      marker.setMap(map);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+          var navbar = document.getElementById("myNavbar");
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+          } else {
+              navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+          }
+      }
+    </script>
+
+  </head>
+
+  <body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <ul class="w3-navbar" id="myNavbar">
+      <li><a class="w3-padding-large" href = ""><i class="fa fa-home fa-fw" aria-hidden="true"></i> 首頁</a></li>
+      <li><a class="w3-padding-large" href = "../food/food.html"><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i> 食</a></li>
+      <li><a class="w3-padding-large" href = "../house/house.html"><i class="fa fa-street-view fa-fw" aria-hidden="true"></i> 住</a></li>
+      <li><a class="w3-padding-large" href = "../traffic/traffic.html"><i class="fa fa-bus fa-fw" aria-hidden="true"></i> 行</a></li>
+      <li><a class="w3-padding-large" href = "../travel/travel.html"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> 旅遊</a></li>
+      <li><a class="w3-padding-large" href = "../calendar/calendar.html"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 海大行事曆</a></li>
+      <!--<li class="w3-hide-small w3-right">
+        <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+      </li>-->
+    </ul>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-opacity w3-display-container">
+    <div class="w3-display-middle">
+      <span class="w3-center w3-padding-xlarge w3-black w3-xxlarge w3-wide w3-animate-opacity" style="font-family:">NTOU
+      <!--<span class="w3-hide-small">-->HIGH<!--</span>--> LIFE
+      </span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT NTOU</h3>
+    <p class="w3-center"><!--<em>您所不知的海洋大學</em>-->您所不知的海洋大學</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;國立臺灣海洋大學（英語：National Taiwan Ocean University , NTOU），簡稱臺灣海大、海大，
+      是位於中華民國基隆市的國立大學，近年連續獲得教育部「邁向頂尖大學計畫」5年500億補助，為國家重點大學。
+      該校亦為唯一每年（自2005年計劃開始起）榮獲「獎勵大學教學卓越計畫」補助的國立大學，同時也是「臺北聯合大學系統」成員之一。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      海大是臺灣在海洋相關領域之最高學府，在國際教育機構 QS（Quacquarelli Symonds）公布 2015 年亞洲大學排名亞洲前三百大亦是國際各項大學評比中也是全世界海洋大學中排名第一。
+      位於基隆市中正區八尺門海濱的國立綜合大學，佔地三十餘公頃，倚山面海，與和平島及碧砂漁港等景點相臨。
+      現有7個學院、18個學系、11個獨立研究所、26個碩士班及19個博士班，另設有學士後商船及輪機學士學位學程。</p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-section">
+        <br><br>
+        <img src="home_img/NTOU_logo2.png" class="w3-circle" alt="Photo of Me">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-section">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本校重視學生實作實習、跨領域學習、創新創業與就業能力、校外實習。鼓勵學生短期出國進修，
+          大力補助學生社團活動。除服務學習助學金外，每年超過1200萬元各項獎學金。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          海大重視學生之科技、人文、自然均衡發展，培育具「誠樸博毅」之海洋素養，在校游泳課必修，且各班舉行全校性班級唱校歌比賽蔚成風氣。
+          加強學生英文與中文能力。學校部分補助學生參加英文多益考試(設有畢業英文門檻標準)及短期出國進修與海外企業實習。
+          學生修習國文課程時，每學年必須選讀24篇課外文章，並撰寫4篇作文。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          本校重視學生適性發展，協助學生在校就讀期間找到人生志趣職場的方向，
+          特別實施轉系以「興趣」為主的政策。並取消1/2不及格退學措施，改採取以修足必要學分畢業之措施，實施自我調整進度的教育節奏。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-light-grey w3-wide">NTOU Landscape</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center">Some views</h3>
+    <p class="w3-center"><em>Here are some views of the surrounding schools.<br> Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="home_img/NTOU2.jpg" style="width:221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="home_img/NTOU3.jpg" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="home_img/NTOU4.jpg" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="home_img/NTOU5.gif" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="home_img/NTOU6.jpg" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="home_img/NTOU7.JPG" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="home_img/NTOU8.JPG" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="home_img/NTOU.jpg" style="width: 221px; height:130px;" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" style="max-width:100%">
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center">Where is NTOU?</h3>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <!-- Add Google Maps -->
+        <div id="googleMap" class="w3-round-large"></div>
+      </div>
+
+      <div class="w3-col m8 w3-container w3-section">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Address : 台灣基隆市中正區北寧路2號 <br>
+          <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i>Phone : +886-2-2462-2192<br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+    <p><a class = "document" href="" title="說明文件" target = "_blank" class="w3-hover-opacity">說明文件</a></p>
+  </footer>
+
+  <!-- Add Google Maps -->
+
+
+  </body>
+</html>

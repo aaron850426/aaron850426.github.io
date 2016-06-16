@@ -2,25 +2,31 @@
 <html>
 <head>
     <meta charset = "UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>food</title>
-    <link rel = "stylesheet" type = "text/css" href = "../home/home_style.css">
-    <link rel = "stylesheet" type = "text/css" href = "food_style.css">
     <link rel = "stylesheet" type = "text/css" href = "../font-awesome-4.6.3/css/font-awesome.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel = "stylesheet" href="../w3.css">
+    <link rel = "stylesheet" type = "text/css" href = "../home/newHome_style.css">
+    <link rel = "stylesheet" type = "text/css" href = "food_style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVCBwGDSWY0JhxL9_cnlDc6hfFtDoS0xU&signed_in=true&callback=initMap"
+          async defer></script>
+    <script type="text/javascript" src="../jQuery/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="../jQuery/jquery.cycle.all.js"></script>
     <script type="text/javascript" src = "food.js"></script>
 
 </head>
 <body>
 
-  <ul  class="catalog">
-    <li><a href = "../home/home.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i> 首頁</a></li>
-    <li><a class = "catalog_home" href = "food.html"><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i> 食</a></li>
-    <li><a href = "../house/house.html"><i class="fa fa-street-view fa-fw" aria-hidden="true"></i> 住</a></li>
-    <li><a href = "../traffic/traffic.html"><i class="fa fa-bus fa-fw" aria-hidden="true"></i> 行</a></li>
-    <li><a href = "../travel/travel.html"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> 旅遊</a></li>
-    <li><a href = "../calendar/calendar.html"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 海大行事曆</a></li>
-  </ul>
+  <div class="w3-top">
+    <ul class="w3-navbar" id="myNavbar">
+      <li><a class="w3-padding-large" href = "../home/newHome.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i> 首頁</a></li>
+      <li><a class="w3-padding-large" href = ""><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i> 食</a></li>
+      <li><a class="w3-padding-large" href = "../house/house.html"><i class="fa fa-street-view fa-fw" aria-hidden="true"></i> 住</a></li>
+      <li><a class="w3-padding-large" href = "../traffic/traffic.html"><i class="fa fa-bus fa-fw" aria-hidden="true"></i> 行</a></li>
+      <li><a class="w3-padding-large" href = "../travel/travel.html"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> 旅遊</a></li>
+      <li><a class="w3-padding-large" href = "../calendar/calendar.html"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 海大行事曆</a></li>
+    </ul>
+  </div>
 
   <div class="pics">
       <img src="food_img/八方雲集3.jpg" width="200" height="200" alt="picture 1" />
@@ -62,6 +68,13 @@
       <input id="menu_button" class = "menu_button" type = "button" value = "點這裡看菜單"/>
     </div>
     <div id="choose_pics" class="choose_pics"></div>
+  </div>
+  <div id="map_div">
+    <div id="floating-panel">
+        <input id="address" type="textbox" value="台灣海洋大學">
+        <input id="submit" type="button" value="搜尋">
+    </div>
+    <div id="map"></div>
   </div>
 
 </body>
