@@ -2,18 +2,23 @@ body {
   background-image: url(backgroundImage.jpg);
 
 }
-.w3-top {background-color: white;}
+.w3-top {
+  background-color: white;
+}
+
 .component {
 	line-height: 1.5em;
-	margin: 0 auto;
-	padding: 2em 0 3em;
+	margin: 40px auto 0 auto;
+	padding: 2em 0 3em 0;
 	width: 90%;
 	overflow: hidden;
   font-family: 微軟正黑體;
 }
-.component .filler {
-	font-family: "Blokk", Arial, sans-serif;
-	color: #d3d3d3;
+
+.housePS {
+  margin: 8px auto 0 auto;
+  width: 90%;
+  font-family: 微軟正黑體;
 }
 
 .th_hover:hover {

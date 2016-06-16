@@ -1,13 +1,14 @@
 body {
 	background: url('http://thecodeplayer.com/uploads/media/gpp.png');
 	font-family: 微軟正黑體;
-	color: rgb(0, 0, 0);
 }
 
 .w3-top {background-color: white;}
 .pics {
 	width:  80%;
-  margin: 50px auto;
+  margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
   z-index: 0;
 }
 
@@ -21,8 +22,10 @@ body {
 }
 
 .random_choose{
-  margin-top: 50px;
-  margin-left: 300px;
+	width: 100%;
+	margin-top: 50px;
+	margin-left: 350px;
+	margin-right: auto;
 }
 
 .choose_check{
@@ -47,26 +50,20 @@ body {
 }
 
 .choose_pics img{
-  margin-top: 10px;
+	margin-top: 10px;
+	margin-left: 50px;
   height: 200px;
   width: 300px;
 }
 
-.menu_pics {margin: 20px auto; width: 80%;}
-.menu_pics img {
-	margin-left: 100px;
-	width: 80%;
-	height: 500px;
-}
-
 .choose_msg{
-
   font-size: 20px;
   padding: 10px 20px;
 }
 
 .choose_button{
-	margin: 5px auto;
+	margin-top: 5px;
+	margin-left: 50px;
 	float: left;
 	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
@@ -108,7 +105,8 @@ body {
 }
 
 .menu_button {
-	margin: 10px auto;
+	margin-top: 50px;
+	margin-left: 50px;
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -150,17 +148,18 @@ body {
 }
 
 #map {
-	margin: 0 auto;
+	margin: 15px auto;
 	height: 300px;
-	width: 50%;
+	width: 60%;
 }
 #floating-panel {
-	margin: 10px auto;
+	margin-top: 5px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 250px;
-	height: 25px;
+	height: 40px;
   z-index: 5;
-  background-color: #fff;
   padding: 5px;
-  border: 1px solid #999;
   padding-left: 10px;
 }
