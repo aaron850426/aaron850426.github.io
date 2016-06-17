@@ -56,7 +56,7 @@ body, html {
 }
 
 .webLink {text-decoration: none;}
-.webLink:hover {color: blue;}
+.webLink:hover {color: black;}
 
 .document {
   text-decoration: none;
