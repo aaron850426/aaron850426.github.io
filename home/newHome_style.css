@@ -55,6 +55,9 @@ body, html {
     height: 400px;
 }
 
+.webLink {text-decoration: none;}
+.webLink:hover {color: blue;}
+
 .document {
   text-decoration: none;
   font-family: 微軟正黑體;
