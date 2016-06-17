@@ -29,11 +29,11 @@
 
     <div>
       <ul class = "floatMenu">
-        <li id = "bus_101">101</li>
-        <li id = "bus_103">103</li>
-        <li id = "bus_104">104</li>
-        <li id = "bus_1051">1051</li>
-        <li id = "bus_R66">R66</li>
+        <li id = "bus_101" onclick="frameChange(0)">101</li>
+        <li id = "bus_103" onclick="frameChange(1)">103</li>
+        <li id = "bus_104" onclick="frameChange(2)">104</li>
+        <li id = "bus_1051" onclick="frameChange(3)">1051</li>
+        <li id = "bus_R66" onclick="frameChange(4)">R66</li>
       </ul>
     </div>
 
@@ -44,6 +44,8 @@
       <img id = "Img_bus_1051" src = "busImg/1051.jpg" alt = "Bus 1051">
       <img id = "Img_bus_R66" src = "busImg/R66.jpg" alt = "Bus R66">
     </div>
+
+    <iframe src="http://ebus.klcba.gov.tw/klebus/dmap/tw/map?rid=1013&sec=0" id="trafficFrame" class="trafficFrame"></iframe>
 
   </body>
 </html>

@@ -3,8 +3,8 @@ body {background-image: url("../background_Img/b001.gif"); font-family:微軟正
 	background-color: white;
 }
 .pics {
-	width:  80%;
-  margin-top: 100px;
+	width:  100%;
+  margin-top: 50px;
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -12,12 +12,8 @@ body {background-image: url("../background_Img/b001.gif"); font-family:微軟正
 }
 
 .pics img {
-  padding: 5px;
-  border:  1px solid #ccc;
-  background-color: #eee;
-  margin-left: 70px;
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 1000px;
 }
 
 .view_div {
@@ -25,7 +21,7 @@ body {background-image: url("../background_Img/b001.gif"); font-family:微軟正
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-  width: 70%;
+  width: 90%;
   z-index: 0;
 }
 .view_div table{

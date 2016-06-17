@@ -78,3 +78,12 @@ $(document).ready(function(){
       $("#Img_bus_R66").slideDown("slow");
     });
 });
+
+var trafficAddressed = ["http://ebus.klcba.gov.tw/klebus/dmap/tw/map?rid=1011&sec=0",
+                      "http://ebus.klcba.gov.tw/klebus/dmap/tw/map?rid=1031&sec=0",
+                      "http://ebus.klcba.gov.tw/klebus/dmap/tw/map?rid=1041&sec=0",
+                      "",
+                      "http://ebus.klcba.gov.tw/klebus/dmap/tw/map?rid=5662&sec=0"];
+function frameChange(index){
+  document.getElementById("trafficFrame").src = trafficAddressed[index];
+}
